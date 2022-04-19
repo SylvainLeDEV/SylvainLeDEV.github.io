@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 3em;
+  font-weight: bold;
+  color: #674141;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Currently, in build.",
+  "main": "src/js/main.js",
+  "scripts": {
+    "sass": "src/sass --watch ./src/sass/main.scss:./src/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SylvainLeDEV/SylvainLeDev.github.io.git"
+  },
+  "author": "Sylvain TESSIER",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SylvainLeDEV/SylvainLeDev.github.io/issues"
+  },
+  "homepage": "https://github.com/SylvainLeDEV/SylvainLeDev.github.io#readme",
+  "dependencies": {
+    "sass": "^1.50.1"
+  }
+}
