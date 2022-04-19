@@ -1,6 +1,6 @@
 # My personal website 
 
-Currently, in build. 
+Currently, in development lien : https://sylvainledev.github.io/ . 
 
 
 
