@@ -4,7 +4,7 @@
   "description": "Currently, in build.",
   "main": "src/js/main.js",
   "scripts": {
-    "sass": "src/sass --watch ./src/sass/main.scss:./src/css/style.css"
+    "sass": "sass --watch ./src/sass/main.scss:./src/css/style.css"
   },
   "repository": {
     "type": "git",
