@@ -1,0 +1,38 @@
+
+.navbar {
+
+  &__content {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-logo {
+
+      a {
+        @include anchor;
+
+        > h1 {
+          font-family: $font-primary;
+          font-size: $size-medium;
+          color: $colour-tertiaire;
+        }
+      }
+    }
+
+    &-hamburger {
+      > span {
+
+      }
+
+    }
+
+  }
+
+  //Overlay hamberger menu
+  &__overlay {
+
+
+  }
+
+}

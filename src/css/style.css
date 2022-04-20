@@ -1,17 +1,173 @@
-@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
-
-body {
-  height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+.navbar__content {
+  padding: 10px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+}
+.navbar__content-logo a {
+  text-decoration: none;
+}
+.navbar__content-logo a:hover {
+  text-decoration: none;
+}
+.navbar__content-logo a:focus {
+  text-decoration: none;
+}
+.navbar__content-logo a:active {
+  text-decoration: none;
+}
+.navbar__content-logo a > h1 {
+  font-family: "Cookie", cursive;
+  font-size: 1.8rem;
+  color: #A44200;
+}
+.loadcontent {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
   height: 100%;
-  font-size: 3em;
-  font-weight: bold;
-  color: #674040;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  animation: loadinger linear 0.3s;
+  animation-delay: 2.9s;
+  animation-fill-mode: both;
+}
+
+.loading {
+  z-index: 1;
+  opacity: 1;
+}
+.loading__letter {
+  font-family: "Cookie", cursive;
+  font-size: 3rem;
+  color: black;
+  background: linear-gradient(90deg, hsl(48deg, 92%, 53%) 4%, hsl(46deg, 100%, 50%) 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: loading 0.5s ease-in-out 3 both;
+  animation-direction: alternate-reverse;
+}
+.loading__letter--1 {
+  animation-delay: 93.3333333333ms;
+}
+.loading__letter--2 {
+  animation-delay: 186.6666666667ms;
+}
+.loading__letter--3 {
+  animation-delay: 280ms;
+}
+.loading__letter--4 {
+  animation-delay: 373.3333333333ms;
+}
+.loading__letter--5 {
+  animation-delay: 466.6666666667ms;
+}
+.loading__letter--6 {
+  animation-delay: 560ms;
+}
+.loading__letter--7 {
+  animation-delay: 653.3333333333ms;
+}
+.loading__letter--8 {
+  animation-delay: 746.6666666667ms;
+}
+.loading__letter--9 {
+  animation-delay: 840ms;
+}
+.loading__letter--10 {
+  animation-delay: 933.3333333333ms;
+}
+.loading__letter--11 {
+  animation-delay: 1026.6666666667ms;
+}
+.loading__letter--12 {
+  animation-delay: 1120ms;
+}
+.loading__letter--13 {
+  animation-delay: 1213.3333333333ms;
+}
+.loading__letter--14 {
+  animation-delay: 1306.6666666667ms;
+}
+.loading__letter--15 {
+  animation-delay: 1400ms;
+}
+.loading__letter--7 {
+  padding-right: 10px;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+@keyframes loadinger {
+  0% {
+    opacity: 1;
+    right: 0;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    right: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

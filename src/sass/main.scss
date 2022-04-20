@@ -1,15 +1,29 @@
-//Minireset.css
-@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+// Variables, function, mixins et %placeholders
+@import "utils/variables";
+//@import "utils/functions";
+@import "utils/mixins";
+@import "utils/responsive";
 
-body{
-  height: 100vh;
-}
-h1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  font-size: 3em;
-  font-weight: bold;
-  color: black;
-}
+//Base (Reset)
+@import "base/reset";
+
+//Components
+//@import "components/buttons";
+@import "components/nav";
+@import "components/loading-spinner";
+
+//Layout
+@import "layout/hero";
+@import "layout/header";
+@import "layout/footer";
+//@import "layout/menu";
+
+//Police Cookie
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+//Police Rubik
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+
+
+

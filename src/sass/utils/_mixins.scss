@@ -1,0 +1,17 @@
+@mixin anchor {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+    //outline: none;
+  }
+
+  &:focus {
+    text-decoration: none;
+    //outline: none;
+  }
+  &:active {
+    text-decoration: none;
+    //outline: none;
+  }
+}
