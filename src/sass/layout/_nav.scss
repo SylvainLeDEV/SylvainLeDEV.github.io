@@ -9,6 +9,7 @@
   //right: 0;
 
   &__content {
+    //Background see if i would keep it
     background: #f6f2f2;
     padding: 12px;
     display: flex;
@@ -68,14 +69,20 @@
 
 
     &-closebtn {
+
       position: absolute;
       color: white;
       top: 20px;
-      right: 45px;
+      right: 10%;
       font-size: 60px;
       transition: 0.4s;
       @include anchor($overlay-btn-color, $overlay-btn-color-hover, $overlay-btn-color-hover, $overlay-btn-color-hover);
-
+      @include responsive-laptop{
+        right: 8%;
+      }
+      @include responsive-laptop-L {
+        right: 15%;
+      }
 
     }
 

@@ -1,5 +1,13 @@
-#hero-home{
+.hero-home{
 
   min-height: 100vh;
+
+  &__content{
+    height: 400px;
+    font : bold $size-large "Bilbo Swash Caps", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 }

@@ -213,7 +213,7 @@ td, th {
   position: absolute;
   color: white;
   top: 20px;
-  right: 45px;
+  right: 10%;
   font-size: 60px;
   transition: 0.4s;
   text-decoration: none;
@@ -230,6 +230,16 @@ td, th {
 .navbar__overlay-closebtn:active {
   text-decoration: none;
   color: #f1f1f1;
+}
+@media screen and (min-width: 1024px) {
+  .navbar__overlay-closebtn {
+    right: 8%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .navbar__overlay-closebtn {
+    right: 15%;
+  }
 }
 .navbar__overlay-anchor {
   position: relative;
@@ -259,8 +269,15 @@ td, th {
   color: #f1f1f1;
 }
 
-#hero-home {
+.hero-home {
   min-height: 100vh;
+}
+.hero-home__content {
+  height: 400px;
+  font: bold 2.4rem "Bilbo Swash Caps", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
