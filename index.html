@@ -6,7 +6,12 @@
     <meta name="description" content="Sylvain TESSIER, développeur web, Toulouse, France">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--    Link to the CSS file and Script js in defer mode-->
+    <!--    favicon-->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo/favicon.ico">
+    <!--    fontwasome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--    Link to the CSS file and Script js in defer mode-->
     <link rel="stylesheet" href="src/css/style.css">
     <script defer src="src/js/main.js"></script>
 
@@ -36,11 +41,13 @@
             <div class="navbar__content">
                 <div class="navbar__content-logo">
                     <a href="index.html">
+                        <i class="fas fa-terminal"></i>
                         <h1> Sylvain Tessier </h1>
                     </a>
                 </div>
                 <div class="navbar__content-hamburger">
-                    <span onclick="openNav()">&#9776;</span>
+                    <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+
                 </div>
             </div>
             <div id="myNavbar" class="navbar__overlay">
