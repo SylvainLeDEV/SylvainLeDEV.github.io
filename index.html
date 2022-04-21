@@ -13,6 +13,9 @@
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <!--    Link to the CSS file and Script js in defer mode-->
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="assets/aos/aos.css">
+
+    <script src="assets/aos/aos.js" defer></script>
     <script defer src="src/js/main.js"></script>
 
 </head>
@@ -38,7 +41,7 @@
 <div class="page-wrapper">
     <section class="hero-home">
         <div class="hero-home__navbar">
-            <div class="navbar__container">
+            <div id="myNavbar" class="navbar__container">
                 <div class="navbar__content">
                     <div class="navbar__content-logo">
                         <a href="index.html">
@@ -51,22 +54,29 @@
                     </div>
                 </div>
             </div>
-        <div id="myNavbar" class="navbar__overlay">
-            <a href="javascript:void(0)" class="navbar__overlay-closebtn" onclick="closeNav()">&times;</a>
-            <div class="navbar__overlay-anchor">
-                <a href="index.html#about">About</a>
-                <a href="index.html#skills">Skills</a>
-                <a href="index.html#portfolio">Portfolio</a>
-                <a href="index.html#contact">Contact</a>
+            <div id="myOverlay" class="navbar__overlay">
+                <a href="javascript:void(0)" class="navbar__overlay-closebtn" onclick="closeNav()">&times;</a>
+                <div class="navbar__overlay-anchor">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#skills">Skills</a>
+                    <a href="index.html#portfolio">Portfolio</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
             </div>
+
         </div>
 
-</div>
-
-<div class="hero-home__content">
-    <h1>Currently in development, coming soon :)</h1>
-</div>
-</section>
+        <div class="hero-home__header">
+            <div class="header__container">
+                <div class="header__content">
+                    <h1 data-aos="fade-up" >I'm a web developer</h1>
+                    <p>I'm a web developer based in Paris, France. I'm a self-taught web developer, I'm a
+                        passionate about web development and I'm always looking for new challenges.</p>
+                    <a href="index.html#about" class="btn btn-primary">About me</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 </div>

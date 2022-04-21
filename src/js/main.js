@@ -1,8 +1,38 @@
 
 // Curtain menu
 function openNav() {
-    document.getElementById("myNavbar").style.height = "100%";
+    document.getElementById("myOverlay").style.height = "100%";
 }
 function closeNav() {
-    document.getElementById("myNavbar").style.height = "0%";
+    document.getElementById("myOverlay").style.height = "0%";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// AOS animation library JS
+AOS.init({
+    duration: 1200,
+});

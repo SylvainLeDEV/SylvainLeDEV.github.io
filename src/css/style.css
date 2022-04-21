@@ -44,6 +44,10 @@ td, th {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .page-wrapper {
   margin: 0 auto;
 }
@@ -271,7 +275,7 @@ td, th {
 }
 
 .hero-home {
-  min-height: 100vh;
+  min-height: 150vh;
 }
 .hero-home__content {
   height: 400px;
