@@ -10,7 +10,7 @@
     &-logo {
 
       a {
-        @include anchor;
+        @include anchor($colour-tertiaire,$colour-tertiaire, $colour-tertiaire, $colour-tertiaire);
 
         > h1 {
           font-family: $font-primary;
@@ -21,7 +21,10 @@
     }
 
     &-hamburger {
+      cursor: pointer;
+
       > span {
+        font-size: $size-medium;
 
       }
 
@@ -31,8 +34,46 @@
 
   //Overlay hamberger menu
   &__overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    //No - scroll
+    overflow-x: hidden;
+    transition: 0.5s;
 
 
+    &-closebtn {
+      position: absolute;
+      color: white;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+      transition: 0.5s;
+      @include anchor( $overlay-btn-color,$overlay-btn-color-hover, $overlay-btn-color-hover,$overlay-btn-color-hover);
+
+
+    }
+
+    &-anchor {
+      position: relative;
+      top: 30%;
+      width: 100%;
+      text-align: center;
+
+      > a {
+        padding: 8px;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.8s;
+        //Color on hover, focus and active
+        @include anchor($overlay-btn-color,$overlay-btn-color-hover, $overlay-btn-color-hover, $overlay-btn-color-hover);
+      }
+    }
   }
 
 }
