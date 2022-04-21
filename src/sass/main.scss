@@ -6,22 +6,21 @@
 
 //Base (Reset)
 @import "base/reset";
+@import "base/allpage";
+@import "base/typography";
 
 //Components
 //@import "components/buttons";
-@import "components/nav";
 @import "components/loading-spinner";
 
 //Layout
-@import "layout/hero";
+@import "layout/nav";
 @import "layout/header";
 @import "layout/footer";
 //@import "layout/menu";
 
-//Police Cookie
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
-//Police Rubik
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+//Pages
+@import "pages/hero";
 
 
 

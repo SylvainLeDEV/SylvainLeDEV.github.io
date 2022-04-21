@@ -1,16 +1,24 @@
 
 .navbar {
+  max-width: $max-width-page;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+  //top: 0;
+  //right: 0;
 
   &__content {
+    background: #f6f2f2;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     &-logo {
+      //My name
 
       a {
-        @include anchor($colour-tertiaire,$colour-tertiaire, $colour-tertiaire, $colour-tertiaire);
+        @include anchor($colour-tertiaire, $colour-tertiaire, $colour-tertiaire, $colour-tertiaire);
 
         > h1 {
           font-family: $font-primary;
@@ -25,6 +33,7 @@
 
       > span {
         font-size: $size-medium;
+        color: $overlay-btn-color
 
       }
 
@@ -43,7 +52,7 @@
     background: rgba(0, 0, 0, 0.9);
     //No - scroll
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.4s;
 
 
     &-closebtn {
@@ -52,8 +61,8 @@
       top: 20px;
       right: 45px;
       font-size: 60px;
-      transition: 0.5s;
-      @include anchor( $overlay-btn-color,$overlay-btn-color-hover, $overlay-btn-color-hover,$overlay-btn-color-hover);
+      transition: 0.4s;
+      @include anchor($overlay-btn-color, $overlay-btn-color-hover, $overlay-btn-color-hover, $overlay-btn-color-hover);
 
 
     }
@@ -71,7 +80,7 @@
         display: block;
         transition: 0.8s;
         //Color on hover, focus and active
-        @include anchor($overlay-btn-color,$overlay-btn-color-hover, $overlay-btn-color-hover, $overlay-btn-color-hover);
+        @include anchor($overlay-btn-color, $overlay-btn-color-hover, $overlay-btn-color-hover, $overlay-btn-color-hover);
       }
     }
   }

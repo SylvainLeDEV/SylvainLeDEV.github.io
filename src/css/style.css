@@ -44,98 +44,10 @@ td, th {
   padding: 0;
 }
 
-.navbar__content {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.navbar__content-logo a {
-  text-decoration: none;
-  color: #A44200;
-}
-.navbar__content-logo a:hover {
-  text-decoration: none;
-  color: #A44200;
-}
-.navbar__content-logo a:focus {
-  text-decoration: none;
-  color: #A44200;
-}
-.navbar__content-logo a:active {
-  text-decoration: none;
-  color: #A44200;
-}
-.navbar__content-logo a > h1 {
-  font-family: "Cookie", cursive;
-  font-size: 1.8rem;
-  color: #A44200;
-}
-.navbar__content-hamburger {
-  cursor: pointer;
-}
-.navbar__content-hamburger > span {
-  font-size: 1.8rem;
-}
-.navbar__overlay {
-  height: 0;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-.navbar__overlay-closebtn {
-  position: absolute;
-  color: white;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-  transition: 0.5s;
-  text-decoration: none;
-  color: #818181;
-}
-.navbar__overlay-closebtn:hover {
-  text-decoration: none;
-  color: #f1f1f1;
-}
-.navbar__overlay-closebtn:focus {
-  text-decoration: none;
-  color: #f1f1f1;
-}
-.navbar__overlay-closebtn:active {
-  text-decoration: none;
-  color: #f1f1f1;
-}
-.navbar__overlay-anchor {
-  position: relative;
-  top: 30%;
-  width: 100%;
-  text-align: center;
-}
-.navbar__overlay-anchor > a {
-  padding: 8px;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.8s;
-  text-decoration: none;
-  color: #818181;
-}
-.navbar__overlay-anchor > a:hover {
-  text-decoration: none;
-  color: #f1f1f1;
-}
-.navbar__overlay-anchor > a:focus {
-  text-decoration: none;
-  color: #f1f1f1;
-}
-.navbar__overlay-anchor > a:active {
-  text-decoration: none;
-  color: #f1f1f1;
+.page-wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  background: red;
 }
 
 .loadcontent {
@@ -240,6 +152,108 @@ td, th {
     right: 100%;
   }
 }
+.navbar {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+}
+.navbar__content {
+  background: #f6f2f2;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar__content-logo a {
+  text-decoration: none;
+  color: #A44200;
+}
+.navbar__content-logo a:hover {
+  text-decoration: none;
+  color: #A44200;
+}
+.navbar__content-logo a:focus {
+  text-decoration: none;
+  color: #A44200;
+}
+.navbar__content-logo a:active {
+  text-decoration: none;
+  color: #A44200;
+}
+.navbar__content-logo a > h1 {
+  font-family: "Cookie", cursive;
+  font-size: 1.9rem;
+  color: #A44200;
+}
+.navbar__content-hamburger {
+  cursor: pointer;
+}
+.navbar__content-hamburger > span {
+  font-size: 1.9rem;
+  color: #676666;
+}
+.navbar__overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.4s;
+}
+.navbar__overlay-closebtn {
+  position: absolute;
+  color: white;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  transition: 0.4s;
+  text-decoration: none;
+  color: #676666;
+}
+.navbar__overlay-closebtn:hover {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.navbar__overlay-closebtn:focus {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.navbar__overlay-closebtn:active {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.navbar__overlay-anchor {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+.navbar__overlay-anchor > a {
+  padding: 8px;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.8s;
+  text-decoration: none;
+  color: #676666;
+}
+.navbar__overlay-anchor > a:hover {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.navbar__overlay-anchor > a:focus {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.navbar__overlay-anchor > a:active {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
 #hero-home {
   min-height: 100vh;
 }

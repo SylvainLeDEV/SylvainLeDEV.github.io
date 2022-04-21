@@ -4,17 +4,16 @@ $colour-secondary: #FFFFFF;
 $colour-tertiaire: #A44200;
 
 // Colors btn
-$overlay-btn-color:#818181;
+$overlay-btn-color: #676666;
 $overlay-btn-color-hover: #f1f1f1;
 
 // Gradients loading spinner
 $gradient-primary: linear-gradient(90deg, hsl(48, 92%, 53%) 4%, hsl(46, 100%, 50%) 95%);
 
-//Polices
-$font-primary:'Cookie', cursive;
-$font-secondary:'Rubik', sans-serif;
-
 // Size
 $size-small: 1.4rem;
-$size-medium: 1.8rem;
+$size-medium: 1.9rem;
 $size-large: 2.4rem;
+
+//Width all page
+$max-width-page: 1440px;
