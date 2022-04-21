@@ -1,0 +1,77 @@
+@use "sass:math";
+
+$num-letter: 15;
+$anim-dur: 1400ms;
+$anim-delay: math.div($anim-dur, $num-letter);
+
+//@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+.loadcontent {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  animation: loadinger linear .3s;
+  animation-delay: 2.9s;
+  animation-fill-mode: both;
+}
+
+.loading {
+  z-index: 1;
+  opacity: 1;
+
+  &__letter {
+    font-family: $font-primary;
+    font-size: 3rem;
+    color: black;
+    //Text grandient
+    background: $gradient-primary;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: loading 0.5s ease-in-out 3 both;
+    animation-direction: alternate-reverse;
+
+    @for $i from 1 through $num-letter {
+      &--#{$i} {
+        animation-delay: $anim-delay * $i;
+      }
+    }
+
+    &--7 {
+      padding-right: 10px;
+    }
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: translateY(0);
+
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+
+@keyframes loadinger {
+
+  0% {
+    opacity: 1;
+    right: 0;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    right: 100%;
+  }
+}

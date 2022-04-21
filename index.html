@@ -3,13 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <title>Sylvain TESSIER</title>
-    <link rel="stylesheet" href="src/css/style.css">
+    <meta name="description" content="Sylvain TESSIER, développeur web, Toulouse, France">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!--    favicon-->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/logo/favicon.ico">
+    <!--    fontwasome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!--    Link to the CSS file and Script js in defer mode-->
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer src="src/js/main.js"></script>
 
 </head>
 <body>
 
-<h1>Currently in development, coming soon :)</h1>
-<script src="src/js/main.js"></script>
+<div class="loadcontent">
+    <div class="loading"></div>
+    <div class="loading__letter loading__letter--1">S</div>
+    <div class="loading__letter loading__letter--2">y</div>
+    <div class="loading__letter loading__letter--3">l</div>
+    <div class="loading__letter loading__letter--4">v</div>
+    <div class="loading__letter loading__letter--5">a</div>
+    <div class="loading__letter loading__letter--6">i</div>
+    <div class="loading__letter loading__letter--7">n</div>
+    <div class="loading__letter loading__letter--9">T</div>
+    <div class="loading__letter loading__letter--10">e</div>
+    <div class="loading__letter loading__letter--11">s</div>
+    <div class="loading__letter loading__letter--12">s</div>
+    <div class="loading__letter loading__letter--13">i</div>
+    <div class="loading__letter loading__letter--14">e</div>
+    <div class="loading__letter loading__letter--15">r</div>
+</div>
+<div class="page-wrapper">
+    <section class="hero-home">
+        <div class="hero-home__navbar">
+            <div class="navbar__content">
+                <div class="navbar__content-logo">
+                    <a href="index.html">
+                        <i class="fas fa-terminal"></i>
+                        <h1> Sylvain Tessier </h1>
+                    </a>
+                </div>
+                <div class="navbar__content-hamburger">
+                    <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+
+                </div>
+            </div>
+            <div id="myNavbar" class="navbar__overlay">
+                <a href="javascript:void(0)" class="navbar__overlay-closebtn" onclick="closeNav()">&times;</a>
+                <div class="navbar__overlay-anchor">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#skills">Skills</a>
+                    <a href="index.html#portfolio">Portfolio</a>
+                    <a href="index.html#contact">Contact</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hero-home__content">
+            <h1>Currently in development, coming soon :)</h1>
+        </div>
+    </section>
+
+
+</div>
+
 </body>
 </html>

@@ -1,0 +1,39 @@
+//Responsive Map
+$breakpoints:(
+        tablet: 768px,
+        laptop: 1024px,
+        laptop-L: 1440px,
+        desktop: 1880px,
+);
+
+// Include this mixin to modify the responsive
+@mixin responsive-Tablet {
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+    @content;
+  }
+}
+
+@mixin responsive-laptop {
+  @media screen and (min-width: map-get($breakpoints, laptop)) {
+    @content;
+  }
+}
+
+@mixin responsive-laptop-L {
+  @media screen and (min-width: map-get($breakpoints, laptop-L)) {
+    @content;
+  }
+}
+
+@mixin responsive-desktop {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+
+// Write this sentence for each breakpoint
+$tablet: "only screen and (min-width: 768px)";
+$laptop: "only screen and (min-width: 1024px)";
+$laptop-L: "only screen and (min-width: 1440px)";
+$desktop: "only screen and (min-width: 1800px)";

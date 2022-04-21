@@ -1,0 +1,21 @@
+@mixin anchor ($text-color,$hover-color, $focus-color,$active-color) {
+  text-decoration: none;
+  color: $text-color;
+
+  &:hover {
+    text-decoration: none;
+    //outline: none;
+    color: $hover-color;
+  }
+
+  &:focus {
+    text-decoration: none;
+    //outline: none;
+    color: $focus-color;
+  }
+  &:active {
+    text-decoration: none;
+    //outline: none;
+    color: $active-color;
+  }
+}

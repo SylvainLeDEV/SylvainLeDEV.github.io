@@ -1,0 +1,107 @@
+
+.navbar {
+  max-width: $max-width-page;
+  margin: 0 auto;
+  position: fixed;
+  width: 100%;
+
+  //top: 0;
+  //right: 0;
+
+  &__content {
+    //Background see if i would keep it
+    background: #f6f2f2;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-logo {
+      //My name
+
+      a {
+        display: flex;
+        align-items: center;
+
+        @include anchor($color-tertiaire, $color-tertiaire, $color-tertiaire, $color-tertiaire);
+
+
+        > i {
+          margin-right: 5px;
+          color: #252323;
+        }
+
+        > h1 {
+          font-family: $font-primary;
+          font-size: $size-medium;
+          color: #252323;
+        }
+
+
+      }
+    }
+
+    &-hamburger {
+      cursor: pointer;
+
+      > span {
+        font-size: $size-small;
+        color: $overlay-btn-color;
+
+      }
+
+    }
+
+  }
+
+  //Overlay hamberger menu
+  &__overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    //No - scroll
+    overflow-x: hidden;
+    transition: 0.4s;
+
+
+    &-closebtn {
+
+      position: absolute;
+      color: white;
+      top: 20px;
+      right: 10%;
+      font-size: 60px;
+      transition: 0.4s;
+      @include anchor($overlay-btn-color, $overlay-btn-color-hover, $overlay-btn-color-hover, $overlay-btn-color-hover);
+      @include responsive-laptop{
+        right: 8%;
+      }
+      @include responsive-laptop-L {
+        right: 15%;
+      }
+
+    }
+
+    &-anchor {
+      position: relative;
+      top: 30%;
+      width: 100%;
+      text-align: center;
+
+      > a {
+        padding: 8px;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.8s;
+        //Color on hover, focus and active
+        @include anchor($overlay-btn-color, $overlay-btn-color-hover, $overlay-btn-color-hover, $overlay-btn-color-hover);
+      }
+    }
+  }
+
+}
