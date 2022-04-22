@@ -21,6 +21,8 @@
 </head>
 <body>
 
+<!-- LOADER -->
+
 <!--<div class="loadcontent">-->
 <!--    <div class="loading"></div>-->
 <!--    <div class="loading__letter loading__letter&#45;&#45;1">S</div>-->
@@ -38,8 +40,12 @@
 <!--    <div class="loading__letter loading__letter&#45;&#45;14">e</div>-->
 <!--    <div class="loading__letter loading__letter&#45;&#45;15">r</div>-->
 <!--</div>-->
+
+<!-- all code is here -->
 <div class="page-wrapper">
-    <section class="hero-home">
+
+    <!--  My section  -->
+    <section id="hero" class="hero-home">
         <div class="hero-home__navbar">
             <div id="myNavbar" class="navbar__container">
                 <div class="navbar__content">
@@ -57,27 +63,80 @@
             <div id="myOverlay" class="navbar__overlay">
                 <a href="javascript:void(0)" class="navbar__overlay-closebtn" onclick="closeNav()">&times;</a>
                 <div class="navbar__overlay-anchor">
-                    <a href="index.html#about">About</a>
-                    <a href="index.html#skills">Skills</a>
-                    <a href="index.html#portfolio">Portfolio</a>
-                    <a href="index.html#contact">Contact</a>
+                    <a href="#myNavbar" onclick="closeNav()" >About</a>
+                    <a href="index.html#skills" onclick="closeNav()" >Skills</a>
+                    <a href="index.html#portfolio" onclick="closeNav()">Portfolio</a>
+                    <a href="index.html#contact" onclick="closeNav()" >Contact</a>
                 </div>
             </div>
 
         </div>
 
         <div class="hero-home__header">
-            <div class="header__container">
-                <div class="header__content">
-                    <h1 data-aos="fade-up" >I'm a web developer</h1>
-                    <p>I'm a web developer based in Paris, France. I'm a self-taught web developer, I'm a
-                        passionate about web development and I'm always looking for new challenges.</p>
-                    <a href="index.html#about" class="btn btn-primary">About me</a>
+
+            <div class="container">
+
+                <div class="content">
+
+                    <div class="content__title">
+                        <h1 data-aos="fade-up"> Développeur Web </h1>
+                    </div>
+
+                    <div class="content__description">
+
+                        <div data-aos="fade-up" data-aos-delay="100" class="description__img">
+                            <img src="./assets/img/logo/imghero.jpg" alt="My beautiful picture :D">
+                        </div>
+
+                        <div class="description__block">
+                            <div class="block__text">
+                                <p>I'm a web developer based in Paris, France. I'm a self-taught web developer, I'm a
+                                    passionate about web development and I'm always looking for new challenges.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur consequuntur
+                                    cum
+                                    cupiditate dolores ea eos error hic molestias numquam provident.</p>
+                            </div>
+
+                            <div class="block__button">
+                                <div class="btn">
+                                    <a href="./assets/img/CV/CV_TESSIER_Sylvain.pdf">
+                                        <i class="far fa-file-alt"></i>
+                                        <p>CV</p>
+                                    </a>
+                                </div>
+                                <div class="btn">
+                                    <a href="./assets/img/CV/CV_TESSIER_Sylvain.pdf">
+                                        <i class="fab fa-github"></i>
+                                        <p>GitHub</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
 
+    <!--   My Hard Skills   -->
+    <section id="skills"></section>
+
+    <!--  My Project   -->
+    <section id="portfolio"></section>
+
+    <!--    footer-->
+    <footer id="footer">
+
+        <div class="link">
+            <a href="mailto:dev.tess.sylvain@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/tessier-sylvain/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://github.com/SylvainLeDEV" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="copyright">©<a href="#hero">Sylvain TESSIER</a> 2022 </p>
+
+
+    </footer>
 
 </div>
 

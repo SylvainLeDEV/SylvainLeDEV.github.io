@@ -6,6 +6,7 @@
     text-decoration: none;
     //outline: none;
     color: $hover-color;
+    transition: 0.2s ease-in-out;
   }
 
   &:focus {
@@ -19,3 +20,5 @@
     color: $active-color;
   }
 }
+
+

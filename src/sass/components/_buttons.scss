@@ -1,0 +1,44 @@
+$transition : 0.3s ease-in-out;
+
+.btn {
+
+  a {
+    width: 130px;
+    border: #e3d7d7 2px solid;
+    padding: 15px;
+    margin: 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: $transition;
+
+    &:hover {
+      background-color: #e3d7d7;
+      transform: scale(1.09);
+      transition: $transition;
+      i{
+        transition: $transition;
+        color: $color-bg-primary;
+        transform: scale(1.02);
+      }
+      p{
+        transition: $transition;
+        color: $color-bg-primary;
+      }
+    }
+
+  }
+
+  i {
+    font-size: $size-small;
+    color: $color-bg-secondary;
+    padding-right: 4px;
+  }
+
+  p {
+    font-size: $size-small;
+    color: $color-bg-secondary;
+  }
+
+}

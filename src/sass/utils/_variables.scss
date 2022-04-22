@@ -1,9 +1,20 @@
 // Colors
 $color-primary: #F6DF19;
-$color-secondary: #FFFFFF;
+$color-secondary: #e3d7d7;
 $color-tertiaire: #A44200;
 
 $color-logo-name: #252323;
+
+// Color text
+$color-text-primary: #efe9e9;
+$color-text-secondary: #2c2e33;
+
+// Color bg
+$color-bg-primary: #2c2e33;
+$color-bg-secondary: #efe9e9;
+
+// Color bg nav footer
+$color-nav-footer: #f6f2f2;
 
 // Colors btn
 $overlay-btn-color: #676666;
@@ -13,10 +24,14 @@ $overlay-btn-color-hover: #f1f1f1;
 $gradient-primary: linear-gradient(90deg, hsl(48, 92%, 53%) 4%, hsl(46, 100%, 50%) 95%);
 
 // Size
-$size-small: 1.4rem;
+$size-small: 1.2rem;
 $size-more-small : 1.6rem;
 $size-medium: 2rem;
 $size-large: 2.4rem;
+$size-x-large: 2.8rem;
 
 //Width all page
 $max-width-content: 1440px;
+
+// Center margin
+$center-margin: 0 auto;
