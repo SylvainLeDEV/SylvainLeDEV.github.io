@@ -1,6 +1,26 @@
 .hero-home {
+  position: relative;
+  background: $color-bg-primary;
 
-  min-height: 100vh;
-  background: $color-bg-primary
+  &__navbar {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+  }
+
+  &__header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+
+
+#myNavbar {
+  height: 58px;
+  transition: 0.4s;
+
 }
 

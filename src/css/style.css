@@ -187,15 +187,12 @@ td, th {
     right: 100%;
   }
 }
-.navbar {
-  position: fixed;
-  width: 100%;
-}
 .navbar__container {
-  background: #f6f2f2;
+  background: rgba(246, 242, 242, 0.95);
 }
 .navbar__content {
   max-width: 1440px;
+  height: 100%;
   margin: 0 auto;
   padding: 12px;
   display: flex;
@@ -313,6 +310,7 @@ td, th {
 .content {
   width: 80%;
   max-width: 1440px;
+  padding: 25px 0;
   margin: 0 auto;
   text-align: center;
 }
@@ -418,8 +416,34 @@ td, th {
 }
 
 .hero-home {
-  min-height: 100vh;
+  position: relative;
   background: #2c2e33;
+}
+.hero-home__navbar {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+.hero-home__header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#myNavbar {
+  height: 58px;
+  transition: 0.4s;
+}
+
+#skills {
+  background: #F6DF19;
+  min-height: 300vh;
+}
+
+#portfolio {
+  background: #3434c4;
+  min-height: 300vh;
 }
 
 /*# sourceMappingURL=style.css.map */
