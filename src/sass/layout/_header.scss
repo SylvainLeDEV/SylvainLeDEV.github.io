@@ -34,7 +34,7 @@
 
 
   margin: 0 auto;
-  max-width: 325px;
+  max-width: 355px;
 
   > img {
     //vertical-align: middle;
@@ -51,6 +51,13 @@
   .block__text {
     padding: unset;
     color: $color-text-primary;
+
+    > p {
+      padding-top: 30px;
+      font-size: $size-small;
+      font-family: $font-secondary;
+    }
+
   }
 
   .block__button {

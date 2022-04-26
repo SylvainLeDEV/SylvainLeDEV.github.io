@@ -80,6 +80,7 @@ td, th {
   padding-right: 4px;
 }
 .btn p {
+  letter-spacing: 2px;
   font-size: 1.2rem;
   color: #efe9e9;
 }
@@ -333,7 +334,7 @@ td, th {
 
 .description__img {
   margin: 0 auto;
-  max-width: 325px;
+  max-width: 355px;
 }
 .description__img > img {
   border: #efe9e9 2px solid;
@@ -344,6 +345,11 @@ td, th {
 .description__block .block__text {
   padding: unset;
   color: #efe9e9;
+}
+.description__block .block__text > p {
+  padding-top: 30px;
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
 }
 .description__block .block__button {
   padding: 2.4rem 0;
