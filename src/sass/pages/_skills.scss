@@ -1,4 +1,86 @@
-#skills{
-  background: #F6DF19;
-  min-height: 300vh;
+#skills {
+  background: $color-bg-secondary;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
+
+//Containers for skills
+.skills__container {
+  width: 80%;
+  max-width: $max-width-content;
+  margin: 0 auto;
+
+
+
+  &-title {
+    font-family:  $font-tertiary;
+    padding-bottom: 20px;
+  }
+
+  &-cards {
+
+    border-radius: 4px;
+
+    @include responsive-laptop-L{
+      margin: 0 auto;
+      width: 80%;
+
+    }
+
+  }
+
+}
+
+// card for skills
+// SKILL IS CARD
+.skill {
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 4px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(1.04);
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h3{
+      color: $color-bg-primary;
+    }
+
+  }
+
+  &__img {
+    height: 30px;
+    display: flex;
+    margin-bottom: 20px;
+
+    > img {
+      padding-right: 20px;
+    }
+
+  }
+
+  &__text {
+
+    > h3 {
+      color: #2c344d;
+      font-family: $font-secondary;
+      font-weight: bold;
+      font-size: $size-small;
+      margin-bottom: 10px;
+    }
+
+    > p {
+      margin-bottom: 10px;
+      font-family: $font-tertiary;
+
+    }
+
+  }
+
+}
+
+
+

@@ -1,4 +1,11 @@
 .page-wrapper {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+
+  ::selection{
+    background: rgba(255,197,118,.9);
+    color: #1f2235;
+
+  }
+
 }

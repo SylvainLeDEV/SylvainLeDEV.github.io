@@ -57,6 +57,9 @@
       padding-top: 30px;
       font-size: $size-small;
       font-family: $font-secondary;
+      @include responsive-laptop {
+        padding-left: 30px;
+      }
     }
 
   }

@@ -9,29 +9,20 @@ function closeNav() {
 
 // Navbar
 let lastScrollTop = 0;
+let ticking = false;
 navbar = document.getElementById("myNavbar");
-window.addEventListener("scroll", function () {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop > lastScrollTop) {
-        navbar.style.opacity = "0";
-        navbar.style.height = "0px";
-    } else {
-        navbar.style.opacity = "0.98";
-        navbar.style.height = "57px";
-    }
 
-    lastScrollTop = scrollTop;
-
-});
-
-const hero = document.getElementById('hero');
-console.log(hero);
-
-
-
-
-
-
+window.addEventListener("scroll", function (e) {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > lastScrollTop) {
+            navbar.style.opacity = "0";
+            navbar.style.height = "0px";
+        } else {
+            navbar.style.opacity = "0.98";
+            navbar.style.height = "57px";
+        }
+        lastScrollTop = scrollTop;
+    });
 
 // AOS animation library JS
 AOS.init({
