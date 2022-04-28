@@ -2,13 +2,13 @@
 
   width: 80%;
   max-width: $max-width-content;
-  padding: 25px 0;
+  padding-top: 60px;
   margin: 0 auto;
   text-align: center;
 
   &__title {
 
-    padding: $size-x-large 0;
+    padding-bottom: $size-x-large;
 
 
     > h1 {
@@ -38,7 +38,6 @@
   max-width: 355px;
 
   > img {
-    //vertical-align: middle;
     border: $color-bg-secondary 2px solid;
     border-radius: 5px;
     width: 99%;

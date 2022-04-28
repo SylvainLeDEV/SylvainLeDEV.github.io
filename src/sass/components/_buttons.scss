@@ -1,5 +1,6 @@
 $transition : 0.3s ease-in-out;
 
+// BTN header
 .btn {
 
   a {
@@ -42,4 +43,20 @@ $transition : 0.3s ease-in-out;
     color: $color-bg-secondary;
   }
 
+}
+
+// Pills buttons
+.pill{
+  background-color: #dc4d10;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-weight: 700;
+  letter-spacing: .1ch;
 }
