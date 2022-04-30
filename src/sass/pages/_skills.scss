@@ -7,8 +7,12 @@
 //Containers for skills
 .skills__container {
   width: 80%;
-  max-width: $max-width-content;
   margin: 0 auto;
+  max-width: $max-width-content;
+
+  //@include responsive-desktop{
+  //  text-align: center;
+  //}
 
 
   &-title {
@@ -30,7 +34,7 @@
 
     > p {
       padding: 30px;
-      font-family: $font-tertiary;
+
       font-size: $size-small;
     }
 
@@ -65,8 +69,9 @@
 
   > h4 {
     color: $color-bg-primary;
-    font-size: $size-small;
-    font-family: bold $font-tertiary;
+    font-size: $size-more-small;
+    font-family: $font-tertiary;
+    font-weight: bold;
     padding-bottom: 8px;
   }
 

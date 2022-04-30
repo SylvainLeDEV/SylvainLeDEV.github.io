@@ -9,8 +9,6 @@
 
 .link {
   padding: 10px 0;
-  color: $color-logo-name;
-
   a{
     @include anchor($color-logo-name, $color-secondary, $color-logo-name, $color-secondary);
   }
@@ -23,12 +21,14 @@
 .copyright {
   color: $color-logo-name;
   font-size: $size-small;
-
   > a {
     font-size: $size-small;
     padding-left: 5px;
     padding-right: 3px;
     @include anchor($color-logo-name, $color-secondary, $color-secondary, $color-secondary);
+
+
+
   }
 
 }

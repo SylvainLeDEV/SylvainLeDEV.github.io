@@ -15,6 +15,10 @@
     align-items: center;
     justify-content: space-between;
 
+    @include responsive-laptop-L{
+      padding: 0;
+    }
+
     &-logo {
       //My name
       a {

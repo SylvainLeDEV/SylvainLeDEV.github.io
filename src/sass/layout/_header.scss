@@ -1,11 +1,11 @@
+
 .content {
 
   width: 80%;
   max-width: $max-width-content;
-  padding-top: 60px;
+  padding: 59px 0;
   margin: 0 auto;
   text-align: center;
-
   &__title {
 
     padding-bottom: $size-x-large;
@@ -54,6 +54,7 @@
 
     > p {
       padding-top: 30px;
+      line-height: 1.7rem;
       font-size: $size-small;
       font-family: $font-secondary;
       @include responsive-laptop {
