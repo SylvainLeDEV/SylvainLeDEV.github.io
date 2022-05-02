@@ -36,7 +36,7 @@
 
 
   &-carousel {
-    width: 80%;
+    width: 100%;
     height: 350px;
     margin: 0 auto;
     border: 4px solid $color-bg-primary;
@@ -44,6 +44,11 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     position: relative;
     overflow: hidden;
+
+    @include responsive-laptop {
+      width: 80%;
+    }
+
   }
 
 }
@@ -66,6 +71,7 @@
 }
 
 .carousel__arrow {
+  color: rgba(182, 17, 17, 0.5);
   position: absolute;
   cursor: pointer;
   width: 20px;
