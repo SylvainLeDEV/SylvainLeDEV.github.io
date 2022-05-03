@@ -1,7 +1,7 @@
 #portfolio {
   background: $color-bg-secondary;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 .portfolio__container {
@@ -24,12 +24,10 @@
 
     > span {
       font-family: $font-secondary;
-      font-size: $size-small;
     }
 
     > p {
       padding: 30px;
-      font-size: $size-small;
     }
 
   }
@@ -47,6 +45,12 @@
 
     @include responsive-laptop {
       width: 80%;
+      height: 450px;
+    }
+
+    &:hover{
+      transform: scale(1.02);
+      transition: 0.5s;
     }
 
   }
@@ -67,7 +71,24 @@
   height: 100%;
   margin: 0;
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  position: relative;
+
+}
+
+.carousel__anchor{
+  text-decoration: none;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  transform: translate(13%, 0);
+  >p{
+    //If I need to add name of the project
+    color: $color-bg-primary;
+    font-size: $size-small;
+    font-family: $font-secondary;
+    padding: 10px;
+  }
 }
 
 .carousel__arrow {
@@ -77,6 +98,10 @@
   width: 20px;
   top: 150px;
   transition: all 0.3s ease;
+
+  @include responsive-laptop {
+    top: 210px;
+  }
 
   &-left {
     left: 10px;

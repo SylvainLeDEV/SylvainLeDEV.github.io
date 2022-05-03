@@ -18,6 +18,7 @@
   "homepage": "https://github.com/SylvainLeDEV/SylvainLeDev.github.io#readme",
   "dependencies": {
     "aos": "^2.3.4",
-    "sass": "^1.50.1"
+    "sass": "^1.50.1",
+    "typed.js": "^2.0.12"
   }
 }

@@ -1,5 +1,5 @@
 #footer {
-  background: $color-bg-secondary;
+  background: $color-bg-primary;
   height: 150px;
   display: flex;
   justify-content: center;
@@ -10,7 +10,7 @@
 .link {
   padding: 10px 0;
   a{
-    @include anchor($color-logo-name, $color-secondary, $color-logo-name, $color-secondary);
+    @include anchor($color-text-primary, $color-secondary, $color-secondary, $color-secondary);
   }
 
   a:nth-child(2) {
@@ -19,15 +19,13 @@
 }
 
 .copyright {
-  color: $color-logo-name;
+  color: $color-text-primary;
   font-size: $size-small;
   > a {
     font-size: $size-small;
     padding-left: 5px;
     padding-right: 3px;
-    @include anchor($color-logo-name, $color-secondary, $color-secondary, $color-secondary);
-
-
+    @include anchor($color-text-primary, $color-secondary, $color-secondary, $color-secondary);
 
   }
 

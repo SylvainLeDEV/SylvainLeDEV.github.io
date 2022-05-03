@@ -17,7 +17,7 @@
     font-size: $size-small;
 
     > h2 {
-      color: $color-tertiaire;
+      color: #d64102;;
       font-family: $font-secondary;
       font-weight: bold;
       margin-bottom: 10px;
@@ -40,7 +40,7 @@
     max-width: 800px;
     margin: 30px auto 30px auto;
     padding: 40px 10px 100px 10px;
-    background: url("/assets/img/background/parcours.jpg") no-repeat fixed 40%;
+    background: url("/assets/img/background/go-forward.jpg") no-repeat fixed center;
     background-size: cover;
     border-radius: 10px;
     box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.35);
@@ -63,7 +63,7 @@
     margin: 0 10px;
     position: relative;
 
-    @include responsive-laptop{
+    @include responsive-laptop {
       margin: 0 30px;
       padding: 50px 60px;
     }
@@ -72,9 +72,9 @@
       border-bottom: 3px solid;
       border-top: none;
 
-      @include responsive-laptop{
+      @include responsive-laptop {
 
-      width: 80%;
+        width: 80%;
       }
 
       &:after {
@@ -91,31 +91,45 @@
       border-top: none;
     }
 
-    &:nth-child(odd){
+    &:nth-child(odd) {
       border-right: 3px solid;
       padding-left: 0;
     }
-    &:nth-child(even){
+
+    &:nth-child(even) {
       border-left: 3px solid;
       padding-right: 0;
     }
 
-    > h4 {
-      font-size: $size-more-small;
-      color: #850505;
-      margin-left: 20px;
-    }
+    div {
+      > h4 {
+        font-size: $size-more-small;
+        //color: #850505;
+        color: #f8701e;
+        text-shadow: 2px 2px 2px #5e2d20;
+        margin-left: 20px;
+      }
 
-    > h6 {
-      font-style: italic;
-      color: $color-primary;
-      margin-left: 20px;
-    }
+      > h6 {
+        font-style: italic;
+        //color: $color-primary;
+        color: #f5cc05;
+        text-shadow: 1px 1px 3px #604a00;
+        margin-left: 20px;
+      }
 
-    > p {
-      line-height: 1.9em;
-      color: $color-text-secondary;
+      > p {
+        color: #f5f1f1;
+        line-height: 1.9em;
+        text-shadow: 2px 2px 3px #171715;
+        //color: $color-text-secondary;
 
+        > span {
+          font-size: 19px;
+          font-weight: bold;
+        }
+
+      }
     }
   }
 }

@@ -7,9 +7,8 @@ function closeNav() {
     document.getElementById("myOverlay").style.height = "0%";
 }
 
-// Navbar
+// Navbar Scroll---------------------//
 let lastScrollTop = 0;
-let ticking = false;
 navbar = document.getElementById("myNavbar");
 
 window.addEventListener("scroll", function (e) {
@@ -23,7 +22,7 @@ window.addEventListener("scroll", function (e) {
     }
     lastScrollTop = scrollTop;
 });
-
+//Navbar End---------------------//
 
 //--------- Carousel ------//
 document.body.onload = function carousel() {
@@ -46,15 +45,37 @@ document.body.onload = function carousel() {
         }
         slides.style.transform = `translateX(-${slideIndex * clientWidth}px)`;
         slides.style.transition = "all 0.6s ease-in-out";
-    }, 5000);
+    }, 3500);
 
     slides.style.width = (numSlides * 100) + "%";
 
+    const linkOfProject = {
+        "1" : "https://sylvainledev.github.io/TessierSylvain_2_26072021/#cards_hebergements",
+        "2" : "https://sylvainledev.github.io/SylvainTessier_3_20082021/",
+        "3" : "https://github.com/SylvainLeDEV/TessierSylvain_7_16012022",
+        '4' : "https://github.com/SylvainLeDEV/TESSIERSylvain_6_23112021"
+    }
+
     for (let i = 0; i < numSlides; i++) {
+        // Create a new div'image' element for each slide
         const image = document.createElement("div");
         image.className = "carousel__image";
+
         image.style.backgroundImage = `url(./assets/img/carousel/carousel${i + 1}.jpg)`;
         slides.appendChild(image);
+
+        //For each image, create a link to the project
+        const anchor = document.createElement("a");
+        anchor.className = "carousel__anchor";
+        anchor.href = Object.values(linkOfProject)[i];
+        anchor.target = "_blank";
+        image.appendChild(anchor);
+
+        //For each image indicate the project name if I need it
+        // const projectName = document.createElement("p");
+        // projectName.innerHTML = Object.keys(linkOfProject)[i];
+        // anchor.appendChild(projectName);
+
     }
 
     buttonLeft.onclick = function () {
@@ -86,6 +107,7 @@ document.body.onload = function carousel() {
 };
 
 //----- END CAROUSEL -----//
+
 
 // AOS animation library JS
 AOS.init({

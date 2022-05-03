@@ -47,9 +47,9 @@ $transition : 0.3s ease-in-out;
 
 // Pills buttons
 .pill{
-  background-color: #dc4d10;
+  background-color: #f33c00;
   border: none;
-  color: #fff;
+  color: #fcf6f6;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -58,5 +58,6 @@ $transition : 0.3s ease-in-out;
   cursor: pointer;
   border-radius: 16px;
   font-weight: 700;
+  font-size:15px;
   letter-spacing: .1ch;
 }

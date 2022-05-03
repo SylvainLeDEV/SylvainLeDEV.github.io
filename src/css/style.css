@@ -46,9 +46,12 @@ td, th {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .page-wrapper {
   font-family: "Montserrat", sans-serif;
-  scroll-behavior: smooth;
 }
 .page-wrapper ::selection {
   background: rgba(255, 197, 118, 0.9);
@@ -92,9 +95,9 @@ td, th {
 }
 
 .pill {
-  background-color: #dc4d10;
+  background-color: #f33c00;
   border: none;
-  color: #fff;
+  color: #fcf6f6;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -103,6 +106,7 @@ td, th {
   cursor: pointer;
   border-radius: 16px;
   font-weight: 700;
+  font-size: 15px;
   letter-spacing: 0.1ch;
 }
 
@@ -209,7 +213,8 @@ td, th {
   }
 }
 .navbar__container {
-  background: rgba(246, 242, 242, 0.98);
+  background: rgba(248, 245, 245, 0.98);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .navbar__content {
   max-width: 1340px;
@@ -234,6 +239,7 @@ td, th {
 .navbar__content-logo a:hover {
   text-decoration: none;
   color: #a43100;
+  opacity: 0.8;
   transition: 0.2s ease-in-out;
 }
 .navbar__content-logo a:focus {
@@ -284,6 +290,7 @@ td, th {
 .navbar__overlay-closebtn:hover {
   text-decoration: none;
   color: #f1f1f1;
+  opacity: 0.8;
   transition: 0.2s ease-in-out;
 }
 .navbar__overlay-closebtn:focus {
@@ -322,6 +329,7 @@ td, th {
 .navbar__overlay-anchor > a:hover {
   text-decoration: none;
   color: #f1f1f1;
+  opacity: 0.8;
   transition: 0.2s ease-in-out;
 }
 .navbar__overlay-anchor > a:focus {
@@ -389,7 +397,7 @@ td, th {
 }
 
 #footer {
-  background: #f5f1f1;
+  background: #2c2e33;
   height: 150px;
   display: flex;
   justify-content: center;
@@ -402,16 +410,17 @@ td, th {
 }
 .link a {
   text-decoration: none;
-  color: #252323;
+  color: #efe9e9;
 }
 .link a:hover {
   text-decoration: none;
   color: #e3d7d7;
+  opacity: 0.8;
   transition: 0.2s ease-in-out;
 }
 .link a:focus {
   text-decoration: none;
-  color: #252323;
+  color: #e3d7d7;
 }
 .link a:active {
   text-decoration: none;
@@ -422,7 +431,7 @@ td, th {
 }
 
 .copyright {
-  color: #252323;
+  color: #efe9e9;
   font-size: 1.2rem;
 }
 .copyright > a {
@@ -430,11 +439,12 @@ td, th {
   padding-left: 5px;
   padding-right: 3px;
   text-decoration: none;
-  color: #252323;
+  color: #efe9e9;
 }
 .copyright > a:hover {
   text-decoration: none;
   color: #e3d7d7;
+  opacity: 0.8;
   transition: 0.2s ease-in-out;
 }
 .copyright > a:focus {
@@ -526,7 +536,7 @@ td, th {
 #portfolio {
   background: #f5f1f1;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 .portfolio__container {
@@ -548,11 +558,9 @@ td, th {
 }
 .portfolio__container-title > span {
   font-family: "Rubik", sans-serif;
-  font-size: 1.2rem;
 }
 .portfolio__container-title > p {
   padding: 30px;
-  font-size: 1.2rem;
 }
 .portfolio__container-carousel {
   width: 100%;
@@ -567,7 +575,12 @@ td, th {
 @media screen and (min-width: 1024px) {
   .portfolio__container-carousel {
     width: 80%;
+    height: 450px;
   }
+}
+.portfolio__container-carousel:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
 }
 
 #carousel-items {
@@ -581,7 +594,22 @@ td, th {
   height: 100%;
   margin: 0;
   background-size: cover;
-  background-position: center;
+  background-position: top;
+  position: relative;
+}
+
+.carousel__anchor {
+  text-decoration: none;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  transform: translate(13%, 0);
+}
+.carousel__anchor > p {
+  color: #2c2e33;
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+  padding: 10px;
 }
 
 .carousel__arrow {
@@ -591,6 +619,11 @@ td, th {
   width: 20px;
   top: 150px;
   transition: all 0.3s ease;
+}
+@media screen and (min-width: 1024px) {
+  .carousel__arrow {
+    top: 210px;
+  }
 }
 .carousel__arrow-left {
   left: 10px;
@@ -629,7 +662,7 @@ td, th {
   font-size: 1.2rem;
 }
 .experience__container-title > h2 {
-  color: #a43100;
+  color: #d64102;
   font-family: "Rubik", sans-serif;
   font-weight: bold;
   margin-bottom: 10px;
@@ -646,7 +679,7 @@ td, th {
   max-width: 800px;
   margin: 30px auto 30px auto;
   padding: 40px 10px 100px 10px;
-  background: url("/assets/img/background/parcours.jpg") no-repeat fixed 40%;
+  background: url("/assets/img/background/go-forward.jpg") no-repeat fixed center;
   background-size: cover;
   border-radius: 10px;
   box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.35);
@@ -696,24 +729,26 @@ td, th {
   border-left: 3px solid;
   padding-right: 0;
 }
-.timeline-exp > h4 {
+.timeline-exp div > h4 {
   font-size: 1.6rem;
-  color: #850505;
+  color: #f8701e;
+  text-shadow: 2px 2px 2px #5e2d20;
   margin-left: 20px;
 }
-.timeline-exp > h6 {
+.timeline-exp div > h6 {
   font-style: italic;
-  color: #d2bf1b;
+  color: #f5cc05;
+  text-shadow: 1px 1px 3px #604a00;
   margin-left: 20px;
 }
-.timeline-exp > p {
+.timeline-exp div > p {
+  color: #f5f1f1;
   line-height: 1.9em;
-  color: #2c2e33;
+  text-shadow: 2px 2px 3px #171715;
 }
-
-#contact {
-  background: #2c2e33;
-  height: 50vh;
+.timeline-exp div > p > span {
+  font-size: 19px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

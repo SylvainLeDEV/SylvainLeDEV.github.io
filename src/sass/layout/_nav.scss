@@ -1,9 +1,11 @@
 
 .navbar {
 
+
   &__container {
     //Background see if i would keep it
-    background: rgba(246, 242, 242, 0.98);
+    background: rgba(248, 245, 245, 0.98);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
 
   &__content {
