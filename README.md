@@ -27,7 +27,7 @@ The carousel is without libraries, just simple javascript, I used my brain to cr
 
 So be lenient and enjoy!
 
-Right now, I let my code like this. I will improve it in the future.
+Right now, I am letting my code like this because I have another project. I promise I will improve it in the future.
 
 
 
