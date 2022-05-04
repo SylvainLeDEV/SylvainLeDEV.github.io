@@ -119,14 +119,16 @@
       }
 
       > p {
-        color: #f5f1f1;
+        font-size: $size-small;
+        color: #f6f3f3;
         line-height: 1.9em;
-        text-shadow: 2px 2px 3px #171715;
         //color: $color-text-secondary;
+        text-shadow: 3px 3px 3px #414141;
 
         > span {
-          font-size: 19px;
+          font-size: 21px;
           font-weight: bold;
+          text-decoration: underline #f8701e 2.5px;
         }
 
       }

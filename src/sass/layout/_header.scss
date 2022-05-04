@@ -8,13 +8,14 @@
   text-align: center;
   &__title {
 
-    padding-bottom: $size-x-large;
+    padding-bottom: $size-large;
+    color: $color-text-primary;
+    font-size: $size-large;
+    font-family: $font-secondary;
 
 
-    > h1 {
-      color: $color-text-primary;
-      font-size: $size-large;
-      font-family: $font-secondary;
+    > span {
+       font-size: $size-small;
     }
 
   }
@@ -53,7 +54,7 @@
     color: $color-text-primary;
 
     > p {
-      padding-top: 30px;
+      padding-top: 25px;
       line-height: 1.7rem;
       font-size: $size-small;
       font-family: $font-secondary;

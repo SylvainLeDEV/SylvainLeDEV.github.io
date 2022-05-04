@@ -112,7 +112,7 @@ html {
 
 .loadcontent {
   position: fixed;
-  z-index: 1;
+  z-index: 30;
   width: 100%;
   height: 100%;
   display: flex;
@@ -132,7 +132,7 @@ html {
   font-family: "Cookie", cursive;
   font-size: 3rem;
   color: black;
-  background: linear-gradient(90deg, hsl(48deg, 92%, 53%) 4%, hsl(46deg, 100%, 50%) 95%);
+  background: linear-gradient(90deg, hsl(48deg, 76%, 48%) 4%, hsl(33deg, 84%, 44%) 95%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: loading 0.5s ease-in-out 3 both;
@@ -349,12 +349,13 @@ html {
   text-align: center;
 }
 .content__title {
-  padding-bottom: 2.8rem;
-}
-.content__title > h1 {
+  padding-bottom: 2.4rem;
   color: #efe9e9;
   font-size: 2.4rem;
   font-family: "Rubik", sans-serif;
+}
+.content__title > span {
+  font-size: 1.2rem;
 }
 @media screen and (min-width: 1024px) {
   .content__description {
@@ -379,7 +380,7 @@ html {
   color: #efe9e9;
 }
 .description__block .block__text > p {
-  padding-top: 30px;
+  padding-top: 25px;
   line-height: 1.7rem;
   font-size: 1.2rem;
   font-family: "Rubik", sans-serif;
@@ -579,19 +580,18 @@ html {
   }
 }
 .portfolio__container-carousel:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   transition: 0.5s;
 }
 
 #carousel-items {
-  width: 100%;
   height: 100%;
   display: flex;
 }
 
 .carousel__image {
   width: 100%;
-  height: 100%;
   margin: 0;
   background-size: cover;
   background-position: top;
@@ -742,13 +742,15 @@ html {
   margin-left: 20px;
 }
 .timeline-exp div > p {
-  color: #f5f1f1;
+  font-size: 1.2rem;
+  color: #f6f3f3;
   line-height: 1.9em;
-  text-shadow: 2px 2px 3px #171715;
+  text-shadow: 3px 3px 3px #414141;
 }
 .timeline-exp div > p > span {
-  font-size: 19px;
+  font-size: 21px;
   font-weight: bold;
+  text-decoration: underline #f8701e 2.5px;
 }
 
 /*# sourceMappingURL=style.css.map */
