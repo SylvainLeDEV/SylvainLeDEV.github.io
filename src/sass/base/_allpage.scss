@@ -1,4 +1,15 @@
-.page-wrapper {
-  margin: 0 auto;
-  max-width: $max-width-page;
+html{
+  scroll-behavior: smooth;
 }
+.page-wrapper {
+  font-family: "Montserrat", sans-serif;
+
+  ::selection{
+    background: rgba(255,197,118,.9);
+    color: #1f2235;
+
+  }
+
+}
+
+

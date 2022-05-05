@@ -1,6 +1,7 @@
 // Variables, function, mixins et %placeholders
 @import "utils/variables";
 //@import "utils/functions";
+@import "utils/placeholders";
 @import "utils/mixins";
 @import "utils/responsive";
 
@@ -10,19 +11,18 @@
 @import "base/typography";
 
 //Components
-//@import "components/buttons";
+@import "components/buttons";
 @import "components/loading-spinner";
 
 //Layout
 @import "layout/nav";
 @import "layout/header";
 @import "layout/footer";
-//@import "layout/menu";
 
 //Pages
 @import "pages/hero";
-
-
-
+@import "pages/skills";
+@import "pages/portfolio";
+@import "pages/experience";
 
 
