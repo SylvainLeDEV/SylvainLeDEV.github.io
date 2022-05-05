@@ -10,7 +10,7 @@ I have built it in order to be responsive and cross-browser compatible.
  - my resume ( In header )
  - My Soft / Hard Skills
  - My experience ( More details of my experience. )
- - My projects (Whit on click you can see the code and the result)
+ - My projects (Click on carousel, you can see the code and the result).
  - In footer, you can find my email and my social networks.
 
 ## Technologies 
