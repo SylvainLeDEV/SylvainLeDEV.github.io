@@ -20,14 +20,14 @@ I have built it in order to be responsive and cross-browser compatible.
 - [JavaScript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
 - [Sass](https://sass-lang.com/)
 
-I used sass for this project, but it's not necessaries.
-
 During this exercise, I reviewed BEM, sass, figma and a few others...
 The carousel is without libraries, just simple javascript, I used my brain to create this.
+And design, it’s not my cup of tea. 
 
-So be lenient and enjoy!
+So be lenient and enjoy !
 
 Right now, I am letting my code like this because I have another project. I promise I will improve it in the future.
+
 
 
 
