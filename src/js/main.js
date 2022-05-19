@@ -35,19 +35,19 @@ document.body.onload = function carousel() {
     const linkOfProject = [
         {
             nom: "Reservia",
-            URL : "https://sylvainledev.github.io/TessierSylvain_2_26072021/#cards_hebergements"
+            URL: "https://sylvainledev.github.io/TessierSylvain_2_26072021/#cards_hebergements"
         },
         {
             nom: "OhMyFood",
-            URL : "https://sylvainledev.github.io/SylvainTessier_3_20082021/"
+            URL: "https://sylvainledev.github.io/SylvainTessier_3_20082021/"
         },
         {
             nom: "Groupomania",
-            URL : "https://github.com/SylvainLeDEV/TessierSylvain_7_16012022"
+            URL: "https://github.com/SylvainLeDEV/TessierSylvain_7_16012022"
         },
         {
             nom: "HotTakes",
-            URL : "https://github.com/SylvainLeDEV/TESSIERSylvain_6_23112021"
+            URL: "https://github.com/SylvainLeDEV/TESSIERSylvain_6_23112021"
         }
     ];
 
@@ -63,14 +63,16 @@ document.body.onload = function carousel() {
     slides.style.width = (numSlides * 100) + "%";
 
 
-    const autoPlay = setInterval(() => {
+    const autoPlay = () => {
         slideIndex++;
         if (slideIndex > numSlides - 1) {
             slideIndex = 0;
         }
         slides.style.transform = `translate(-${slideIndex * containerCarousel}px)`;
         slides.style.transition = "all 0.6s ease-in-out";
-    }, 3500);
+    }
+
+    const autoscrolling = setInterval(autoPlay, 3000)
 
 
     for (let i = 0; i < numSlides; i++) {
@@ -100,7 +102,8 @@ document.body.onload = function carousel() {
         }
         slides.style.transform = `translate(-${slideIndex * containerCarousel}px)`;
         slides.style.transition = "all 0.6s ease-in-out";
-        clearInterval(autoPlay);
+        clearInterval(autoscrolling);
+
     };
 
     buttonRight.onclick = function click() {
@@ -110,12 +113,7 @@ document.body.onload = function carousel() {
         }
         slides.style.transform = `translate(-${slideIndex * containerCarousel}px)`;
         slides.style.transition = "all 0.6s ease-in-out";
-        clearInterval(autoPlay);
-
-        setTimeout(() => {
-            autoPlay();
-        })
-
+        clearInterval(autoscrolling);
     };
 
 
@@ -144,6 +142,33 @@ AOS.init({
     duration: 1100,
 });
 // END AOS animation library JS--//
+
+
+// Mouse ----------------------
+if (!window.navigator.userAgentData.mobile) {
+    const cursor = document.querySelector('.cursor');
+
+    window.addEventListener('mousemove', e => {
+        cursor.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px;`);
+    });
+
+    const hoverLink = document.querySelectorAll('.hover');
+
+    hoverLink.forEach((link) => {
+        link.addEventListener('mouseover', () => {
+            cursor.classList.add('hovered');
+        });
+        link.addEventListener('mouseleave', () => {
+            cursor.style.transition = '.3s ease-out';
+            cursor.classList.remove('hovered');
+        });
+    });
+}
+
+console.log(window.navigator.userAgentData.mobile)
+
+// END Mouse ------------------
+
 
 console.log("COUCOU :) ! Si tu est là, c'est que tu inspecte mon site, pas de problème a ça !  ");
 console.log("Le code est en open source n'hésite pas à t'en servire si tu en as besoin ! ");

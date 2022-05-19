@@ -1,0 +1,16 @@
+.cursor {
+  width: 62px;
+  height: 62px;
+  border: 1px solid $color-primary;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: 500ms ease-out;
+  z-index: 40;
+  backdrop-filter: brightness(120%);
+}
+.cursor.hovered {
+  width: 30px;
+  height: 30px;
+}
