@@ -165,8 +165,6 @@ if (!window.navigator.userAgentData.mobile) {
     });
 }
 
-console.log(window.navigator.userAgentData.mobile)
-
 // END Mouse ------------------
 
 
