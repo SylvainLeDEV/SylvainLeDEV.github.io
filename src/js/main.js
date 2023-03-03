@@ -24,11 +24,40 @@ window.addEventListener("scroll", function (e) {
 });
 // ---- End Navbar ----------//
 
+// ---- Description ---------//
+import { DESCRIPTION } from "/SylvainLeDev.github.io/assets/data/description.js";
+console.log(DESCRIPTION)
+const descriptionBlock = document.querySelector(".block__text");
+for (let i = 0; i < DESCRIPTION.length; i++) {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = DESCRIPTION[i];
+    descriptionBlock.appendChild(paragraph);
+}
+// ---- End Description -----//
+import { LANGUAGE, TOOLS, SOFT_SKILLS } from "/SylvainLeDev.github.io/assets/data/skills.js"
+const skillsContainer = document.querySelector(".skills__container-cards");
+const generateSkills = (skillsArray, skillClass, title) => {
+    const skillDiv = document.createElement("div");
+    skillDiv.classList.add("skill", skillClass);
+    const skillTitle = document.createElement("h4");
+    skillTitle.textContent = title;
+    skillDiv.appendChild(skillTitle);
+    skillsArray.forEach((skill) => {
+        const skillButton = document.createElement("button");
+        skillButton.classList.add("pill", "hover");
+        skillButton.textContent = skill;
+        skillDiv.appendChild(skillButton);
+    });
+    skillsContainer.appendChild(skillDiv);
+};
+generateSkills(LANGUAGE, "skill-language", "Languages");
+generateSkills(TOOLS, "skill-tools", "Tools");
+generateSkills(SOFT_SKILLS, "skill-soft-skills", "Soft Skills");
+// ---- Pill of Skills ------//
+
 // ---- Experience --------- //
 import { CHRONOLOGIE } from "/SylvainLeDev.github.io/assets/data/chronologie.js";
-console.log(CHRONOLOGIE)
 const timelineDiv = document.querySelector(".timeline");
-
 // Loop to display each element of CHRONOLOGIE.
 for (let i = 0; i < CHRONOLOGIE.length; i++) {
     const element = CHRONOLOGIE[i];
@@ -60,7 +89,6 @@ for (let i = 0; i < CHRONOLOGIE.length; i++) {
     // Adding the div element to the timeline div.
     timelineDiv.appendChild(timelineExp);
 }
-
 // ---- Experience ---------//
 
 //--------- Carousel ------//
@@ -69,8 +97,6 @@ document.body.onload = function carousel() {
     const buttonRight = document.querySelector(".carousel__arrow-right");
     const buttonLeft = document.querySelector(".carousel__arrow-left");
     const slides = document.getElementById("carousel-items");
-
-
     const linkOfProject = [
         {
             nom: "Reservia",
