@@ -7,9 +7,9 @@ function closeNav() {
     document.getElementById("myOverlay").style.height = "0%";
 }
 
-// Navbar Scroll---------------------//
+// ---- Navbar Scroll --------//
 let lastScrollTop = 0;
-navbar = document.getElementById("myNavbar");
+const navbar = document.getElementById("myNavbar");
 
 window.addEventListener("scroll", function (e) {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -22,7 +22,46 @@ window.addEventListener("scroll", function (e) {
     }
     lastScrollTop = scrollTop;
 });
-//Navbar End---------------------//
+// ---- End Navbar ----------//
+
+// ---- Experience --------- //
+import { CHRONOLOGIE } from "/SylvainLeDev.github.io/assets/data/chronologie.js";
+console.log(CHRONOLOGIE)
+const timelineDiv = document.querySelector(".timeline");
+
+// Loop to display each element of CHRONOLOGIE.
+for (let i = 0; i < CHRONOLOGIE.length; i++) {
+    const element = CHRONOLOGIE[i];
+
+    // Creating a div element for each element of CHRONOLOGIE.
+    const timelineExp = document.createElement("div");
+    timelineExp.classList.add("timeline-exp");
+
+    // add data-aos for animation
+    const divContent = document.createElement("div");
+    divContent.setAttribute("data-aos", i % 2 === 0 ? "zoom-in-left" : "zoom-in-right");
+    timelineExp.appendChild(divContent);
+
+    // add title
+    const title = document.createElement("h4");
+    title.textContent = element.title;
+    divContent.appendChild(title);
+
+    // add date
+    const date = document.createElement("h6");
+    date.textContent = element.date;
+    divContent.appendChild(date);
+
+    // Add content
+    const content = document.createElement("p");
+    content.textContent = element.content;
+    divContent.appendChild(content);
+
+    // Adding the div element to the timeline div.
+    timelineDiv.appendChild(timelineExp);
+}
+
+// ---- Experience ---------//
 
 //--------- Carousel ------//
 document.body.onload = function carousel() {
@@ -164,7 +203,6 @@ if (!window.navigator.userAgentData.mobile) {
         });
     });
 }
-
 // END Mouse ------------------
 
 

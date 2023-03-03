@@ -40,12 +40,18 @@
     max-width: 800px;
     margin: 30px auto 30px auto;
     padding: 40px 10px 100px 10px;
-    background: url("/assets/img/background/go-forward.jpg") no-repeat fixed center;
+    //background: url("/assets/img/background/go-forward.jpg") no-repeat fixed center;
+    background: #171616;
     background-size: cover;
     border-radius: 10px;
     box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.35);
     transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.01);
+    }
   }
+
 
 }
 
@@ -54,7 +60,6 @@
 
   // Timeline items h4, h6, p
   &-exp {
-
     font-family: $font-secondary;
     padding: 50px 20px;
     border-top: 3px solid;
@@ -73,7 +78,6 @@
       border-top: none;
 
       @include responsive-laptop {
-
         width: 80%;
       }
 

@@ -445,8 +445,8 @@ html {
   text-decoration: none;
   color: #e3d7d7;
 }
-.link a:nth-child(2) {
-  padding: 0 40px;
+.link a {
+  padding: 0 20px;
 }
 
 .copyright {
@@ -697,11 +697,14 @@ html {
   max-width: 800px;
   margin: 30px auto 30px auto;
   padding: 40px 10px 100px 10px;
-  background: url("/assets/img/background/go-forward.jpg") no-repeat fixed center;
+  background: #171616;
   background-size: cover;
   border-radius: 10px;
   box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.35);
   transition: 0.3s;
+}
+.experience__container-card:hover {
+  transform: scale(1.01);
 }
 
 .timeline-exp {

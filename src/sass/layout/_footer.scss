@@ -13,8 +13,8 @@
     @include anchor($color-text-primary, $color-secondary, $color-secondary, $color-secondary);
   }
 
-  a:nth-child(2) {
-    padding: 0 40px;
+  a {
+    padding: 0 20px;
   }
 }
 
