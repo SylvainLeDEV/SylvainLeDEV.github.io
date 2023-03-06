@@ -17,7 +17,7 @@
 
     <script src="/assets/aos/aos.js"></script>
     <script defer src="/assets/typed.js/lib/typed.js"></script>
-    <script type="module" defer src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/main.js"></script>
 
 </head>
 <body>
@@ -60,17 +60,17 @@
                         </a>
                     </div>
                     <div class="navbar__content-hamburger">
-                        <span onclick="openNav()"><i class="fas fa-bars hover"></i></span>
+                        <span class="open-curtain"><i class="fas fa-bars hover"></i></span>
                     </div>
                 </div>
             </div>
             <div id="myOverlay" class="navbar__overlay">
-                <a href="javascript:void(0)" class="navbar__overlay-closebtn" onclick="closeNav()">&times;</a>
+                <a href="javascript:void(0)" class="navbar__overlay-closebtn close-curtain">&times;</a>
                 <div class="navbar__overlay-anchor">
-                    <a href="#hero" class="hover" onclick="closeNav()"> The Hero of the Website </a>
-                    <a href="#skills" class="hover" onclick="closeNav()">Mes compétences</a>
-                    <a href="#experience" class="hover" onclick="closeNav()">Mes experiences</a>
-                    <a href="#portfolio" class="hover" onclick="closeNav()">Portfolio</a>
+                    <a href="#hero" class="hover close-curtain"> The Hero of the Website </a>
+                    <a href="#skills" class="hover close-curtain">Mes compétences</a>
+                    <a href="#experience" class="hover close-curtain">Mes experiences</a>
+                    <a href="#portfolio" class="hover close-curtain">Portfolio</a>
                 </div>
             </div>
 

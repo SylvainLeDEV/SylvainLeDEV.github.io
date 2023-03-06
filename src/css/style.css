@@ -590,6 +590,7 @@ html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
+  transition: 0.4s ease-in-out;
 }
 @media screen and (min-width: 1024px) {
   .portfolio__container-carousel {
@@ -598,9 +599,8 @@ html {
   }
 }
 .portfolio__container-carousel:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-  transition: 0.5s;
 }
 
 #carousel-items {
