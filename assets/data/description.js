@@ -1,6 +1,6 @@
 // Always 3 paragraph
 export const DESCRIPTION = [
-    "Je suis Développeur web basé à MONTPELLIER, France. passionné par l'informatique je me suis lancé dans le développement web en 2021. Aujourd'hui, j'ai fini ma formation de développeur web OpenClassrooms.",
-    "Je suis actuellement en recherche active d'emploi. En attendant de trouver j'effectue des petits projets pour progresser.",
-    "N'hésitez pas à me contacter, que ce soit pour un projet, une opportunité d'emploi ou simplement pour échanger."
+    "Je suis un passionné de développement Web basé à MONTPELLIER, France. En 2021, j'ai décidé de me lancer dans ce domaine en autodidacte, avant de consolider mes connaissances en suivant une formation certifiante proposée par OpenClassrooms.",
+    "Je vous invite à visiter mon site pour découvrir mes compétences et réalisations. Mon classeur Notion contient plus de détails si vous souhaitez en savoir davantage.",
+    "Vous avez un projet web en tête, une opportunité d'emploi ou simplement discuter, n'hésitez pas à me contacter. Je suis toujours ravi d'échanger et de collaborer avec de nouvelles personnes."
 ]

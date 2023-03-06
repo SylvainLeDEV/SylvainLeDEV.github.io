@@ -2,15 +2,17 @@ export const LANGUAGE = [
     "ReactJS",
     "NodeJS",
     "HTML & CSS",
+    "SASS",
     "JavaScript",
 ]
 export const TOOLS = [
-    "Git",
+    "Git Hub/Lab",
+    "GitFlow",
     "Figma",
     "AWS",
     "Sequelize",
-    "Firebase",
-    "MongoDB"
+    "MySQL Workbench",
+    "Postman"
 ]
 export const SOFT_SKILLS = [
     "Esprit d'équipe",

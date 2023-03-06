@@ -61,7 +61,7 @@ import(DESCRIPTION_MODULE_URL)
         }
     })
     .catch(error => {
-        console.error(error)
+        console.error("Error in file Description : ", error)
     });
 // ---- End Description -----//
 const SKILLS_MODULE_URL = `${URL_FOLDER_DATA}/skills.js`;
