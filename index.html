@@ -17,8 +17,7 @@
 
     <script src="/assets/aos/aos.js"></script>
     <script defer src="/assets/typed.js/lib/typed.js"></script>
-    <script defer src="/src/js/main.js"></script>
-
+    <script type="module" src="/src/js/main.js"></script>
 
 </head>
 <body>
@@ -61,17 +60,17 @@
                         </a>
                     </div>
                     <div class="navbar__content-hamburger">
-                        <span onclick="openNav()"><i class="fas fa-bars hover"></i></span>
+                        <span class="open-curtain"><i class="fas fa-bars hover"></i></span>
                     </div>
                 </div>
             </div>
             <div id="myOverlay" class="navbar__overlay">
-                <a href="javascript:void(0)" class="navbar__overlay-closebtn" onclick="closeNav()">&times;</a>
+                <a href="javascript:void(0)" class="navbar__overlay-closebtn close-curtain">&times;</a>
                 <div class="navbar__overlay-anchor">
-                    <a href="#hero" class="hover" onclick="closeNav()"> The Hero of the Website </a>
-                    <a href="#skills" class="hover" onclick="closeNav()">Mes compétences</a>
-                    <a href="#experience" class="hover" onclick="closeNav()">Mes experiences</a>
-                    <a href="#portfolio" class="hover" onclick="closeNav()">Portfolio</a>
+                    <a href="#hero" class="hover close-curtain"> The Hero of the Website </a>
+                    <a href="#skills" class="hover close-curtain">Mes compétences</a>
+                    <a href="#experience" class="hover close-curtain">Mes experiences</a>
+                    <a href="#portfolio" class="hover close-curtain">Portfolio</a>
                 </div>
             </div>
 
@@ -95,19 +94,7 @@
 
                     <div class="description__block">
                         <div class="block__text">
-
-                            <p>
-                                Je suis Développeur web basé à MONTPELLIER, France. passionné par l'informatique je
-                                me suis lancé dans le développement web en 2021. Aujourd'hui, j'ai fini ma formation
-                                de développeur web OpenClassrooms.
-                            </p>
-
-                            <p>
-                                Je suis actuellement en recherche active d'emploi. En attendant de trouver
-                                j'effectue des petits projets pour progresser.
-                            </p>
-                            <p> N'hésitez pas à me contacter, que ce soit pour un projet,
-                                une opportunité d'emploi ou simplement pour échanger.</p>
+                            <!-- Add in file description.js -->
                         </div>
 
                         <div class="block__button">
@@ -121,6 +108,13 @@
                                 <a href="https://github.com/SylvainLeDEV" target="_blank">
                                     <i class="fab fa-github"></i>
                                     <p>GitHub</p>
+                                </a>
+                            </div>
+                            <div class="btn hover">
+                                <a href="https://polar-aftershave-e8b.notion.site/Sylvain-TESSIER-73166c1bcb8e477882ce9da8c4c860f3"
+                                   target="_blank">
+                                    <i class="fas fa-book"></i>
+                                    <p>Notion</p>
                                 </a>
                             </div>
                         </div>
@@ -141,36 +135,7 @@
                 <p data-aos="fade-up"> Voici quelques outils que j'utilise pour créer des applications web. </p>
             </div>
             <div class="skills__container-cards">
-                <div class="skill skill-language">
-                    <h4>Languagues</h4>
-                    <button class="pill">VueJS</button>
-                    <button class="pill">ReactJS</button>
-                    <button class="pill">NodeJS</button>
-                    <button class="pill">Javascript</button>
-                    <button class="pill">HTML & CSS</button>
-                </div>
-
-                <div class="skill skill-tools">
-                    <h4>Tools</h4>
-                    <button class="pill">Git</button>
-                    <button class="pill">Figma</button>
-                    <button class="pill">MongoDB</button>
-                    <button class="pill">Express</button>
-                    <button class="pill">MySQL</button>
-                    <button class="pill">Sequelize</button>
-                    <button class="pill">Firebase</button>
-                </div>
-
-                <div class="skill skill-soft-skills">
-                    <h4>Soft Skills</h4>
-                    <button class="pill">Travail en équipe</button>
-                    <button class="pill">Esprit d'équipe</button>
-                    <button class="pill">Autonomie</button>
-                    <button class="pill">Curieux</button>
-                    <button class="pill">Humble</button>
-                </div>
-
-
+                <!-- Add in file Skills.js -->
             </div>
 
         </div>
@@ -191,107 +156,10 @@
             <div class="experience__container-card">
 
                 <div class="timeline">
-                    <!-- Right now-->
-                    <div class="timeline-exp">
-                        <div data-aos="zoom-in-right">
-                            <h4> RECHERCHE D'EMPLOI et AUTODIDACT </h4>
-                            <h6> avril 2022 - Aujourd'hui </h6>
-                            <p> Je suis actuellement en recherche d'emploi. Durant cette période je me suis fixé deux
-                                <span>objectifs</span>.
-                                Le premier est l'apprentissage de <span>l'Anglais</span> ( minimum B2 pour Juillet 2022
-                                ). Le second est de
-                                faire des petits projets en <span>ReactJS</span> et <span>NodeJS</span>.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Coaching to employability  -->
-                    <div class="timeline-exp">
-                        <div data-aos="zoom-in-left">
-                            <h4> COACHING - Insertion Professionnelle </h4>
-                            <h6> Mars 2022 - Avril 2022 </h6>
-                            <p>
-                                Après la formation développeur Web, un coaching d'insertion professionnelle est mis en
-                                place pour aider les futurs développeurs à s'insérer dans leur nouveau monde professionnel.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Web Developer training with OpenClassrooms  -->
-                    <div class="timeline-exp">
-                        <div data-aos="zoom-in-right">
-                            <h4> DÉVELOPPEUR WEB - OpenClassromms </h4>
-                            <h6> Juillet 2021 - Mars 2022 </h6>
-                            <p>
-                                Formation de 8 mois 100% distanciel. Formation orienté Full Stack
-                                <span>JavaScript</span>.
-                                Tout au long de la formation j'ai fait de <span>l'intégration</span> maquettes, j'ai également appris
-                                à construire un <span>BackEnd</span> et pris connaissance des enjeux du <span>SEO</span> et de
-                                l'<span>accessibilité</span>.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- initiation to iOS development -->
-                    <div class="timeline-exp">
-                        <div data-aos="zoom-in-left">
-                            <h4> DÉVEOPPEUR iOS - Simplon </h4>
-                            <h6> Mai 2021 - Juin 2022 </h6>
-                            <p>
-                                Initiation de 1 mois au développement d'application sur iOS. Utilisation de
-                                <span>Swift</span> et <span>Xcode</span>.
-                                Utilisation de <span>Trello</span> et <span>Marvel</span> pour un suivi de projet en
-                                équipe. (4 personnes)
-
-                            </p>
-                        </div>
-                    </div>
-
-                    <!--  Trainee at SENDUP              -->
-                    <div class="timeline-exp">
-                        <div data-aos="zoom-in-right">
-                            <h4> Développement Web - Stage </h4>
-                            <h6> Avril 2021 - Mai 2021 </h6>
-                            <p> Stage d'immersion de 3 semaines. J'ai pu voir le fonctionnement de <span>Ticketing</span>,
-                                les daily, <span>GitHub</span>, WordPress
-                                et réalisé des bous de code, ce qui m'a permis de <span>m'initier</span> au
-                                développement web.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!--  Maintenance              -->
-                    <div class="timeline-exp">
-                        <div data-aos="zoom-in-left">
-                            <h4>Technicien de Maintenance Industrielle</h4>
-                            <h6> 2017 - 2021 </h6>
-                            <p>
-                                Durant ces années d'expérience, j'ai pu me découvrir <span>professionnellement</span> et
-                                <span>personnellement</span>, j'ai acquis énormément de connaissances.
-                                J'ai rencontré des personnes incroyables qui ont su me partager leurs savoirs. Je leur en suis très reconnaissant.
-                                Aujourd'hui, grace à cela je sais ce qui <span>m'anime</span> et me <span>motive</span> à me lever le
-                                matin.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="timeline-exp">
-                        <div data-aos="zoom-in-right">
-                            <h4>BAC et BTS Maintenance Industrielle</h4>
-                            <h6> 2012 - 2017 </h6>
-                            <p>
-                                J'ai réalisé un Bac Professionnel et BTS en maintenance Industrielle. Cette orientation
-                                m'a permis de
-                                découvrir de nombreux métiers : Automatisme, mécanique, électricité, pneumatique,
-                                hydraulique, dessin industriel, programmation informatique, soudure etc.
-                            </p>
-                        </div>
-                    </div>
-
+                    <!-- Add in file chronologie.js -->
                 </div>
-
             </div>
-
-
         </div>
-
     </section>
 
     <!--  My Project   -->
@@ -302,7 +170,7 @@
             <div class="portfolio__container-title">
                 <h2>Portfolio</h2>
                 <span> MES PROJETS </span>
-                <p data-aos="fade-up"> Voici quelques projets et bien d'autres sont à venir.  </p>
+                <p data-aos="fade-up"> Voici quelques projets et bien d'autres sont à venir. </p>
 
             </div>
 
@@ -316,7 +184,8 @@
                     <path d="M17 2L3 14.7451L17 28" stroke="#423A3A" stroke-width="3" stroke-linecap="round"/>
                 </svg>
 
-                <svg class="carousel__arrow carousel__arrow-left hover" width="19" height="30" viewBox="0 0 19 30" fill="none"
+                <svg class="carousel__arrow carousel__arrow-left hover" width="19" height="30" viewBox="0 0 19 30"
+                     fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <path d="M17 2L3 14.7451L17 28" stroke="#423A3A" stroke-width="3" stroke-linecap="round"/>
                 </svg>
@@ -336,10 +205,10 @@
             <a href="https://www.linkedin.com/in/tessier-sylvain/" target="_blank"><i class="fab fa-linkedin hover"
                                                                                       aria-hidden="true"></i></a>
             <a href="https://github.com/SylvainLeDEV" target="_blank"><i class="fab fa-github hover"></i></a>
+            <a href="https://polar-aftershave-e8b.notion.site/Sylvain-TESSIER-73166c1bcb8e477882ce9da8c4c860f3"
+               target="_blank"><i class="fas fa-book hover"></i></a>
         </div>
-        <p class="copyright hover">©<a href="#hero">Sylvain TESSIER</a> 2022 </p>
-
-
+        <p class="copyright hover">From Scratch ©<a href="#hero">Sylvain TESSIER</a> 2022 </p>
     </footer>
 
 </div>
