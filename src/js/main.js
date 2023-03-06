@@ -53,7 +53,7 @@ for (let i = 0; i < DESCRIPTION.length; i++) {
     descriptionBlock.appendChild(paragraph);
 }
 // ---- End Description -----//
-import {LANGUAGE, TOOLS, SOFT_SKILLS} from "/SylvainLeDev.github.io/assets/data/skills.js"
+import {LANGUAGE, TOOLS, SOFT_SKILLS} from "/assets/data/skills.js"
 
 const skillsContainer = document.querySelector(".skills__container-cards");
 const generateSkills = (skillsArray, skillClass, title) => {
