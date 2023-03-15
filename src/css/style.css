@@ -224,10 +224,14 @@ html {
   z-index: 40;
   backdrop-filter: brightness(120%);
 }
-
 .cursor.hovered {
   width: 30px;
   height: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .cursor {
+    display: none;
+  }
 }
 
 .navbar__container {
@@ -362,9 +366,13 @@ html {
 .content {
   width: 80%;
   max-width: 1340px;
-  padding: 59px 0;
   margin: 0 auto;
   text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .content {
+    padding: 75px 0 50px 0;
+  }
 }
 .content__title {
   padding-bottom: 2.4rem;

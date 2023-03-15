@@ -1,6 +1,6 @@
 let URL_FOLDER_DATA = '/assets/data/'
 // ---- End Environement ---- //
-
+const isMobile = window.innerWidth <= 768;
 // ---- Curtain menu ---- //
 function openNav() {
     document.getElementById("myOverlay").style.height = "100%";
@@ -108,10 +108,15 @@ import(CHRONOLOGIE_MODULE_URL)
             const timelineExp = document.createElement("div");
             timelineExp.classList.add("timeline-exp");
 
-            // add data-aos for animation
             const divContent = document.createElement("div");
-            divContent.setAttribute("data-aos", i % 2 === 0 ? "zoom-in-left" : "zoom-in-right");
-            timelineExp.appendChild(divContent);
+            if (isMobile) {
+                timelineExp.classList.add("aos-disabled");
+                timelineExp.appendChild(divContent);
+            } else {
+                // add data-aos for animation
+                divContent.setAttribute("data-aos", i % 2 === 0 ? "zoom-in-left" : "zoom-in-right");
+                timelineExp.appendChild(divContent);
+            }
 
             // add title
             const title = document.createElement("h4");
@@ -254,15 +259,12 @@ AOS.init({
 
 
 // Mouse ----------------------
-if (!window.navigator.userAgentData.mobile) {
+if (!isMobile) {
     const cursor = document.querySelector('.cursor');
-
     window.addEventListener('mousemove', e => {
         cursor.setAttribute('style', `top: ${e.pageY}px; left: ${e.pageX}px;`);
     });
-
     const hoverLink = document.querySelectorAll('.hover');
-
     hoverLink.forEach((link) => {
         link.addEventListener('mouseover', () => {
             cursor.classList.add('hovered');

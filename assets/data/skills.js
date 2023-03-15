@@ -12,12 +12,14 @@ export const TOOLS = [
     "AWS",
     "Sequelize",
     "MySQL Workbench",
-    "Postman"
+    "Postman",
+    "Notion"
 ]
 export const SOFT_SKILLS = [
     "Esprit d'équipe",
     "Autonomie",
     "Curieux",
-    "Humbre ",
-    "Concentration"
+    "Humble ",
+    "Concentration",
+    "Ordonné"
 ]
